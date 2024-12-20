@@ -6,5 +6,10 @@ def home():
 @app.route('/contacto')
 def contacto():
     return render_template("contacto.html")
+
+@app.route('/prueba')
+def prueba():
+    return render_template("prueba.html")
+
 if __name__ =='__main__':
     app.run(debug=True)
